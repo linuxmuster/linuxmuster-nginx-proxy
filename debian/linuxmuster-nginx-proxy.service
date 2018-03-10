@@ -1,0 +1,14 @@
+[Unit]
+Description=linuxmuster nginx proxy docker container
+Requires=docker.service
+After=docker.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/srv/docker/linuxmuster-nginx-proxy/start.sh
+ExecStop=/srv/docker/linuxmuster-nginx-proxy/stop.sh
+
+[Install]
+WantedBy=multi-user.target
+Alias=nginx-proxy.service

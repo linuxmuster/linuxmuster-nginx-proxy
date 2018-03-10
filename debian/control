@@ -1,0 +1,13 @@
+Source: linuxmuster-nginx-proxy
+Section: linuxmuster
+Priority: optional
+Maintainer: Thomas Schmitt <thomas@linuxmuster.net>
+Build-Depends: debhelper (>= 5.0.0)
+Standards-Version: 5.0.0
+
+Package: linuxmuster-nginx-proxy
+Architecture: all
+Depends: linuxmuster-prepare, docker, docker-compose
+Description: linuxmuster.net nginx reverse proxy for docker containers configuration scripts
+ This package provides linuxmuster.net configuration scripts for a nginx reverse
+ proxy for docker containers.

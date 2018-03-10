@@ -1,0 +1,5 @@
+linuxmuster-nginx-proxy (0.1.0-0ubuntu0) lmn7-testing; urgency=low
+
+  * initial release.
+
+ -- Thomas Schmitt <thomas@linuxmuster.net>  Fri, 09 Mar 2018 20:43:49 +0100

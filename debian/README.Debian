@@ -1,0 +1,2 @@
+This package provides linuxmuster.net configuration scripts for a nginx reverse
+proxy for docker containers.

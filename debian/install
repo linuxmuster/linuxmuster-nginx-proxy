@@ -1,0 +1,3 @@
+docker/*  srv/docker/linuxmuster-nginx-proxy/
+debian/linuxmuster-nginx-proxy.service  etc/systemd/system/
+share/* usr/share/linuxmuster-nginx-proxy/

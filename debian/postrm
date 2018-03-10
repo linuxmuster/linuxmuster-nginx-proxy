@@ -1,0 +1,14 @@
+#!/bin/bash
+#
+# postrm script for linuxmuster-nginx-proxy
+# thomas@linuxmuster.net
+# 20180309
+# GPL v3
+#
+
+set -e
+
+# remove configs
+name="linuxmuster-nginx-proxy"
+dockerdir="/srv/docker/$name"
+rm -rf "$dockerdir"

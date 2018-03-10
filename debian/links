@@ -1,0 +1,3 @@
+srv/docker/linuxmuster-nginx-proxy/exec.sh usr/sbin/linuxmuster-nginx-proxy-exec
+srv/docker/linuxmuster-nginx-proxy/start.sh usr/sbin/linuxmuster-nginx-proxy-start
+srv/docker/linuxmuster-nginx-proxy/stop.sh usr/sbin/linuxmuster-nginx-proxy-stop
