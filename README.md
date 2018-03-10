@@ -7,7 +7,7 @@ To add your container simply place a nginx configuration file with extension _.c
 
 Minimal conf example (adjust ports and hostname):  
 `  
-server {  
+  server {  
     listen 443 ssl;  
 
     ssl_certificate           /tmp/ssl/docker.cert.pem;  
@@ -16,5 +16,5 @@ server {
     location / {  
       proxy_pass http://docker.linuxmuster.lan:80;  
     }  
-}  
+  }  
 `
