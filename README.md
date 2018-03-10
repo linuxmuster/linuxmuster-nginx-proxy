@@ -15,4 +15,5 @@ Minimal conf example (adjust ports and hostname):
     location / {  
       proxy_pass http://docker.linuxmuster.lan:80;  
     }  
-  }`  
+  }  
+`
