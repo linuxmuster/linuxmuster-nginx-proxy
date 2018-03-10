@@ -6,7 +6,7 @@ To add your container simply place a nginx configuration file with extension _.c
 `systemctl restart linuxmuster-nginx-proxy`  
 
 Minimal conf example (adjust ports and hostname):    
-`
+```
   server {  
     listen 443 ssl;  
     ssl_certificate           /tmp/ssl/docker.cert.pem;  
@@ -15,4 +15,4 @@ Minimal conf example (adjust ports and hostname):
       proxy_pass http://docker.linuxmuster.lan:80;  
     }  
   }  
-`
+```
