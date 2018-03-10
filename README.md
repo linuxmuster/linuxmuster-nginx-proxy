@@ -2,11 +2,11 @@
 
 linuxmuster.net scripts and configuration files to setup a nginx reverse proxy for docker containers (based on [jwilder/nginx-proxy](https://github.com/jwilder/nginx-proxy)).
 
-To add your container simply add a nginx configuration file with extension _.conf_ to _/srv/docker/linuxmuster-nginx-proxy/conf.d_ and restart the container:  
+To add your container simply place a nginx configuration file with extension _.conf_ in _/srv/docker/linuxmuster-nginx-proxy/conf.d_ and restart the container:  
 `systemctl restart linuxmuster-nginx-proxy`  
 
 Minimal conf example (adjust ports and hostname):  
-`
+`  
 server {  
     listen 443 ssl;  
 
@@ -16,5 +16,5 @@ server {
     location / {  
       proxy_pass http://docker.linuxmuster.lan:80;  
     }  
-}
+}  
 `
