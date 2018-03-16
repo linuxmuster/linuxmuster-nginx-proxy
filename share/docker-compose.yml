@@ -1,7 +1,7 @@
 # /srv/docker/linuxmuster-nginx-proxy/docker-compose.yml
 #
 # thomas@linuxmuster.net
-# 20180309
+# 20180310
 
 version: '2'
 
@@ -12,8 +12,7 @@ services:
     @@ports@@
     volumes:
       - /var/run/docker.sock:/tmp/docker.sock:ro
-      - /etc/linuxmuster/ssl:/tmp/ssl:ro
-      - /etc/linuxmuster/ssl/cacert.pem:/etc/ssl/certs/cacert.pem:ro
+      - /etc/linuxmuster/ssl:/etc/nginx/certs:ro
       - ./conf.d:/etc/nginx/conf.d
 
   whoami:

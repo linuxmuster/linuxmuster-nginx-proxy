@@ -1,5 +1,12 @@
+linuxmuster-nginx-proxy (0.2.0-0ubuntu0) lmn7-testing; urgency=low
+
+  * changed certificate path.
+  * postinst improvements.
+
+ -- Thomas Schmitt <thomas@linuxmuster.net>  Mon, 12 Mar 2018 20:26:36 +0100
+
 linuxmuster-nginx-proxy (0.1.0-0ubuntu0) lmn7-testing; urgency=low
 
   * initial release.
 
- -- Thomas Schmitt <thomas@linuxmuster.net>  Sat, 10 Mar 2018 13:03:14 +0100
+ -- Thomas Schmitt <thomas@linuxmuster.net>  Sat, 10 Mar 2018 16:44:41 +0100

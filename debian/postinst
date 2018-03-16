@@ -2,7 +2,7 @@
 #
 # postinst script for linuxmuster-nginx-proxy
 # thomas@linuxmuster.net
-# 20180309
+# 20180312
 # GPL v3
 #
 
@@ -23,6 +23,7 @@ set -e
 #
 
 name="linuxmuster-nginx-proxy"
+images="jwilder/nginx-proxy jwilder/whoami"
 sharedir="/usr/share/$name"
 dockerkey="/etc/linuxmuster/ssl/docker.key.pem"
 dockerdir="/srv/docker/$name"
@@ -31,8 +32,17 @@ case "$1" in
 
  configure)
 
+  # pull docker image
+  if ping -q -c2 google.com &> /dev/null; then
+    for i in $images; do
+      docker pull "$i"
+    done
+  fi
+
   if [ ! -e "$dockerkey" ]; then
-    echo "SSL hostkey not found! Please run linuxmuster-prepare first."
+    echo "SSL hostkey not found!"
+    echo "Please run linuxmuster-prepare with -c option first,"
+    echo "then run dpkg-reconfigure $name."
     exit 0
   fi
 
